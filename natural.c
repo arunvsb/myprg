@@ -2,13 +2,13 @@
  
 void main()
 {
-    int i, num, sum = 0;
+    int i, n, sum = 0;
  
     printf("Enter an integer number \n");
-    scanf ("%d", &num);
-    for (i = 1; i <= num; i++)
+    scanf ("%d", &n);
+    for (i = 1; i <= n; i++)
     {
         sum = sum + i;
     }
-    printf ("Sum of first %d natural numbers = %d\n", num, sum);
+    printf ("Sum of first %d natural numbers = %d\n", n, sum);
 }
