@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int l, h, i, flag;
+    int l, h, i, f;
     printf("Enter two numbers(intervals): ");
     scanf("%d %d", &l, &h);
 
@@ -9,18 +9,18 @@ int main()
 
     while (l < h)
     {
-        flag = 0;
+        f = 0;
 
         for(i = 2; i <= l/2; ++i)
         {
             if(l % i == 0)
             {
-                flag = 1;
+                f = 1;
                 break;
             }
         }
 
-        if (flag == 0)
+        if (f == 0)
             printf("%d ", l);
 
         ++l;
