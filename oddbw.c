@@ -1,19 +1,19 @@
 #include <stdio.h>
 int main()
 {
-    int low, high, i, flag;
+    int l, h, i, flag;
     printf("Enter two numbers(intervals): ");
-    scanf("%d %d", &low, &high);
+    scanf("%d %d", &l, &h);
 
-    printf("Prime numbers between %d and %d are: ", low, high);
+    printf("Prime numbers between %d and %d are: ", l, h);
 
-    while (low < high)
+    while (l < h)
     {
         flag = 0;
 
-        for(i = 2; i <= low/2; ++i)
+        for(i = 2; i <= l/2; ++i)
         {
-            if(low % i == 0)
+            if(l % i == 0)
             {
                 flag = 1;
                 break;
@@ -21,9 +21,9 @@ int main()
         }
 
         if (flag == 0)
-            printf("%d ", low);
+            printf("%d ", l);
 
-        ++low;
+        ++l;
     }
 
     return 0;
