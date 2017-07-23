@@ -8,12 +8,12 @@ int main()
     scanf("%d",&b);
     printf("enter the c value\n");
     scanf("%d",&c);
-    if(a<b)
+    if(a<b&&c<b)
     {
         printf("b is greater");
     
     }
-    else if(a<c)
+    else if(a<c&&b<c)
     {
         printf("c is greater");
     }
