@@ -9,18 +9,18 @@ int main()
 
     while (low < high)
     {
-        flag = 0;
+        f= 0;
 
         for(i = 2; i <= low/2; ++i)
         {
             if(low % i == 0)
             {
-                flag = 1;
+                f= 1;
                 break;
             }
         }
 
-        if (flag == 0)
+        if (f== 0)
             printf("%d ", low);
 
         ++low;
