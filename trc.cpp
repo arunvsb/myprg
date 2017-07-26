@@ -7,7 +7,7 @@ float area(float,float);
 int main()
 {
 	int s,l,b;
-	float r,bs,ht;
+	float r,cs,ht;
 	cout<<"Enter side of a square:";
 	cin>>s;
 	cout<<"Enter length and breadth of rectangle:";
@@ -15,11 +15,11 @@ int main()
 	cout<<"Enter radius of circle:";
 	cin>>r;
 	cout<<"Enter base and height of triangle:";
-	cin>>bs>>ht;
+	cin>>cs>>ht;
 	cout<<"Area of square is"<<area(s);
 	cout<<"\nArea of rectangle is "<<area(l,b);
     cout<<"\nArea of circle is "<<area(r);
-    cout<<"\nArea of triangle is "<<area(bs,ht);
+    cout<<"\nArea of triangle is "<<area(cs,ht);
 }
 int area(int s)
 {
@@ -33,7 +33,7 @@ float area(float r)
 {
     return(3.14*r*r);
 }
-float area(float bs,float ht)
+float area(float cs,float ht)
 {
-   return((bs*ht)/2);
+   return((cs*ht)/2);
 }
