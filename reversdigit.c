@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 int reversDigits(int num)
 {
